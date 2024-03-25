@@ -8,10 +8,14 @@ TWILIO_TOKEN=XXXXXXXXXXXXX
 TWILIO_FROM=+XXXXXXXXXXX
 ```
 next, we need to install twilio/sdk composer package to use twilio api. so let's run bellow command:
-```composer require twilio/sdk```
+```
+composer require twilio/sdk
+```
 ### Create Migration for table
 here, we need to create "user_codes" table and need to add phone field on users table. so let's create migration as bellow:
-```php artisan make:migration create_user_codes```
+```
+php artisan make:migration create_user_codes
+```
 After this command you will find one file in following path "database/migrations" and you have to put bellow code in your migration file for create user_codes table.
 
 ```
@@ -55,7 +59,9 @@ class CreateUserCodes extends Migration
 ```
 
 Now you have to run this migration by following command:
-```php artisan migrate```
+```
+php artisan migrate
+```
 
 ### Create and Update Models
 Here, we need to update user model and create new model call UserCode. so let's update code:
@@ -664,11 +670,15 @@ Ok, now we are ready to run.
 
 So let's run project using this command:
 
-```php artisan serve```
+```
+php artisan serve
+```
 
 open bellow UR:
 
-```localhost:8000/```
+```
+localhost:8000/
+```
 
 Now you can simply run and check...
 
